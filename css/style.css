@@ -18,6 +18,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
+  top: 0;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -303,6 +304,107 @@ body {
   width: 100%;
 }
 
+/* non items */
+
+.titem li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.titem li img {
+  width: 100%;
+  -webkit-transition: all 0.3s linear, 1s;
+  -ms-transition: all 0.3s linear, 1s;
+  -mz-transition: all 0.3s linear, 1s;
+  -o-transition: all 0.3s linear, 1s;
+  -transition: all 0.3s linear, 1s;
+}
+
+.titem .item {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.titem .icons {
+  position: absolute;
+  top: 80%;
+  text-align: center;
+  z-index: 3;
+  background: darkslategrey;
+  padding: 3px;
+}
+
+.titem .icons i {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 9px;
+}
+
+.titem a {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.2s linear, 0.2s;
+  -moz-transition: all 0.2s linear, 0.2s;
+  -o-transition: all 0.2s linear, 0.2s;
+  -ms-transition: all 0.2s linear, 0.2s;
+  -transition: all 0.2s linear, 0.2s;
+}
+
+.titem .imageOverlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  -transition: all 0.2s linear, 1s;
+}
+
+.titem .item:hover .imageOverlay {
+  opacity: 1;
+}
+
+.titem .openButton {
+  float: left;
+  left: -250px;
+}
+
+.titem .projectLink {
+  float: right;
+  right: -250px;
+}
+
+.titem .item:hover .openButton {
+  left: 0px;
+}
+
+.titem .item:hover .projectLink {
+  right: 0px;
+}
+
+.titem .item:hover img {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05);
+  -ms-transform: scale(1.05, 1.05);
+  -transform: scale(1.05, 1.05);
+}
+
+.titem {
+  padding: 0;
+}
+
+/* end */
+
 .items li {
   display: inline-block;
   padding: 5px;
@@ -435,12 +537,12 @@ body {
   color: #4171da;
 }
 
-.twitter {
+.vimeo {
   color: #fff;
   padding: 6px;
 }
 
-.twitter:hover {
+.vimeo:hover {
   color: #55acee;
 }
 
@@ -512,7 +614,7 @@ body {
 
 #navigation {
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 20px 10px;
+  padding: 24px 10px;
   z-index: 100;
   width: 100%;
   margin-bottom: -4px;
@@ -650,6 +752,10 @@ body {
 
 .creditSection p {
   margin: 0;
+}
+
+.phone {
+  margin-top: 16px;
 }
 
 /* GreyMod */
