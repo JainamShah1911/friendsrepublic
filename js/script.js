@@ -85,28 +85,22 @@ $(document).ready(function () {
 
     });
 
-    const nav = $("#navigation");
-    const navTop = nav.offset().top;
+    const port = $("#portfolio");
+    const portTop = port.offset().top - 90;
 
-    // $(window).on("scroll", stickyNavigation);
+    $(window).on("scroll", stickyLogo);
 
-    // function stickyNavigation() {
+    function stickyLogo() {
 
-    //     var body = $("body");
+        var logo = $("#nav-brand");
 
-    //     if ($(window).scrollTop() >= navTop) {
-    //         body.css("padding-top", nav.outerHeight() + "px");
-    //         body.addClass("fixedNav");
-    //     }
-    //     else {
-    //         body.css("padding-top", 0);
-    //         body.removeClass("fixedNav");
-    //     }
-
-
-
-
-    //}
+        if ($(window).scrollTop() >= portTop) {
+            logo.fadeIn(600);
+        }
+        else {
+            logo.fadeOut(600); 
+        }
+    }
 
 });
 

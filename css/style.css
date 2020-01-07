@@ -762,6 +762,12 @@ body {
   font-size: 12px;
 }
 
+.nav-logo {
+  height: 61px;
+  position: fixed;
+  top: .5em;
+}
+
 /* GreyMod */
 
 /* ############### */
