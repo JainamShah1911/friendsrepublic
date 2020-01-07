@@ -766,6 +766,7 @@ body {
   height: 61px;
   position: fixed;
   top: .5em;
+  display: none;
 }
 
 /* GreyMod */
