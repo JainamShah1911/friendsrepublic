@@ -25,7 +25,7 @@ $(document).ready(function () {
     });
 
     var typed = new Typed(".typed", {
-        strings: ["Film Maker", "Editor", "Creator"],
+        strings: ["Film Maker", "Editor", "Creator", "Cinematographer", "Director"],
         typeSpeed: 50,
         loop: true,
         startDelay: 400,

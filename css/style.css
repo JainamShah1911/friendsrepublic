@@ -67,7 +67,6 @@ body {
 }
 
 .TitleMessage .heading .sub {
-  font-size: 25px;
   font-weight: 300;
 }
 
@@ -122,6 +121,11 @@ body {
   margin-bottom: -80px;
 }
 
+.frLogo {
+  height: 100px;
+  opacity: 0.65;
+}
+
 @media screen and (max-width: 1336px) {
   .TitleMessage .heading .main {
     font-size: 70px;
@@ -129,7 +133,7 @@ body {
     font-weight: 300;
   }
   .TitleMessage .heading .sub {
-    font-size: 35px;
+    font-size: 15px;
     font-weight: 300;
     position: relative;
   }
@@ -767,6 +771,7 @@ body {
   position: fixed;
   top: .5em;
   display: none;
+  opacity: 0.65;
 }
 
 /* GreyMod */
